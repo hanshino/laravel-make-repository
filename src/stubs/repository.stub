@@ -2,20 +2,15 @@
 
 namespace DummyNamespace;
 
-use JasonGuru\LaravelMakeRepository\Repository\BaseRepository;
-//use Your Model
-
-/**
- * Class DummyClass.
- */
 class DummyClass extends BaseRepository
 {
     /**
-     * @return string
-     *  Return the model
+     * DummyClass constructor.
+     *
+     * @param
      */
-    public function model()
+    public function __construct($model)
     {
-        //return YourModel::class;
+        $this->model = $model;
     }
 }
